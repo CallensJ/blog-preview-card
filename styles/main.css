@@ -1,0 +1,95 @@
+:root {
+  --background: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: inherit;
+  font-family: "Figtree", sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--background);
+}
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 1px solid black;
+  max-width: 23.438rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 10px 10px 0px 0px rgba(18,18,18,1);
+}
+.inner-container {
+  border-radius: 0.625rem;
+}
+
+.image-container {
+  max-width: 23.438rem;
+}
+.image-container,
+.image {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+.content {
+  margin: 1.25rem 0;
+}
+
+.tag {
+  color: var(--black);
+  background-color: var(--background);
+  display: block;
+  padding: 0.625rem 1rem;
+  width: min-content;
+  border-radius: 0.313rem;
+  font-weight: 800;
+}
+.published-date {
+  display: block;
+  margin: 1rem 0;
+}
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.title:hover{
+    color:var(--background);
+    transition: .2s;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+  color: var(--grey);
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.username{
+    font-size: 1rem;
+    margin-left:1rem;
+}
